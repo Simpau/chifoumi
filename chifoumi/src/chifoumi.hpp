@@ -3,8 +3,8 @@
 
 class Chifoumi {
 
-public choixRandom ();
-  
+public std::String choixRandom();
+public void resultat(String choixIA, String choixJoueur);
 }
 
 #endif
