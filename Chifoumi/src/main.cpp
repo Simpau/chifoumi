@@ -20,7 +20,6 @@ int main(int argc, char ** argv){
     /// Calcul du résultat de la partie
     result.play(argv[1],choix);
 
-    std::cout << "\n" << std::endl;  
   }while (choix != "quit");
   
   return 0;
