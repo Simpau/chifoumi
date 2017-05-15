@@ -2,6 +2,7 @@
 #include "Random.hpp"
 #include <iostream>
 
+/// Fonction permettant de jouer
 void Chifoumi::play(std::string playerName, std::string playerMove){  
   int ia = _rang(3);
   std::string move[] = {"rock", "paper", "scissor"};
