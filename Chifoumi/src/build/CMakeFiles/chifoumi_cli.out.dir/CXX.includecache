@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/simon/Documents/projet_GL/chifoumi/src/chifoumi.cpp
+chifoumi.hpp
+/home/simon/Documents/projet_GL/chifoumi/src/chifoumi.hpp
+iostream
+-
+random
+-
+string
+-
+
+/home/simon/Documents/projet_GL/chifoumi/src/chifoumi.hpp
+string
+-
+
+/home/simon/Documents/projet_GL/chifoumi/src/chifoumi_cli.cpp
+chifoumi.hpp
+/home/simon/Documents/projet_GL/chifoumi/src/chifoumi.hpp
+string
+-
+iostream
+-
+
