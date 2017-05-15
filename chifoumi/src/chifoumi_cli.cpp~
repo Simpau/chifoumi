@@ -1,9 +1,7 @@
 #include "chifoumi.hpp"
-#include <string>
 #include <iostream>
 
-
-int main(){
+int main(char **argv){
 
   std::string choixHumain="toto";
   std::string choixBot;
@@ -15,14 +13,14 @@ int main(){
   std::cout << "move (rock, paper, scissors, quit): " << std::endl;
 
   /// Récupếration du choix humain
-std::cin >> choixHumain;
+  cin >> choixHumain << std::endl;
 
   /// Réalisation du choix IA
   std::cout << "\n" << std::endl;
-choixBot=Chifoumi::choixRandom();
+  choixBot=choixRandom();
   
   /// Calcul du résultat de la partie
-Chifoumi::resultat(choixBot,choixHumain);
+  resultat(choixBot,choixHumain);
 
   std::cout << "\n" << std::endl;  
   }

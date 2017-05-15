@@ -7,9 +7,6 @@ find_package( PkgConfig REQUIRED )
 pkg_check_modules( PKG REQUIRED gtkmm-2.4 cpputest )
 include_directories( ${PKG_INCLUDE_DIRS} )
 
-add_executable( HelloWorld.out src/HelloWorld.cpp)
-target_link_libraries( HelloWorld.out ${PKG_LIBRARIES} )
-
-add_executable( HelloWorld_test.out src/HelloWorld_test.cpp src/main_test.cpp)
-target_link_libraries( HelloWorld_test.out ${PKG_LIBRARIES} )
+add_executable( chifoumi_cli.out src/chifoumi.cpp src/chifoumi_cli.cpp)
+target_link_libraries( chifoumi_cli.out ${PKG_LIBRARIES} )
 
