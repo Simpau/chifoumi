@@ -1,0 +1,11 @@
+- Gestion de jeu (-> log des tours)
+- IA (random)
+- Interface console
+- Interface gaphique
+-> c++
+
+- Calcul + affichage des stats (graphiques)
+-> bash + gnuplot
+
+- Documentation utilisateur -> sphinx
+- Documentation développeur -> doxygen
