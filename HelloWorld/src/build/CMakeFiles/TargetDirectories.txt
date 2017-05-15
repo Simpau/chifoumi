@@ -1,1 +1,0 @@
-/home/simon/Documents/projet_GL/HelloWorld/src/build/CMakeFiles/HelloWorld.out.dir
