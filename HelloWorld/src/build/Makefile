@@ -43,18 +43,18 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/simon/Documents/projet_GL/HelloWorld
+CMAKE_SOURCE_DIR = /home/exoleet/Documents/GL/Projet/chifoumi/HelloWorld
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/simon/Documents/projet_GL/HelloWorld/src/build
+CMAKE_BINARY_DIR = /home/exoleet/Documents/GL/Projet/chifoumi/HelloWorld/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -73,9 +73,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simon/Documents/projet_GL/HelloWorld/src/build/CMakeFiles /home/simon/Documents/projet_GL/HelloWorld/src/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/exoleet/Documents/GL/Projet/chifoumi/HelloWorld/src/build/CMakeFiles /home/exoleet/Documents/GL/Projet/chifoumi/HelloWorld/src/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/simon/Documents/projet_GL/HelloWorld/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/exoleet/Documents/GL/Projet/chifoumi/HelloWorld/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -115,6 +115,19 @@ HelloWorld.out/fast:
 	$(MAKE) -f CMakeFiles/HelloWorld.out.dir/build.make CMakeFiles/HelloWorld.out.dir/build
 .PHONY : HelloWorld.out/fast
 
+#=============================================================================
+# Target rules for targets named HelloWorld_test.out
+
+# Build rule for target.
+HelloWorld_test.out: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 HelloWorld_test.out
+.PHONY : HelloWorld_test.out
+
+# fast build rule for target.
+HelloWorld_test.out/fast:
+	$(MAKE) -f CMakeFiles/HelloWorld_test.out.dir/build.make CMakeFiles/HelloWorld_test.out.dir/build
+.PHONY : HelloWorld_test.out/fast
+
 src/HelloWorld.o: src/HelloWorld.cpp.o
 .PHONY : src/HelloWorld.o
 
@@ -139,6 +152,54 @@ src/HelloWorld.cpp.s:
 	$(MAKE) -f CMakeFiles/HelloWorld.out.dir/build.make CMakeFiles/HelloWorld.out.dir/src/HelloWorld.cpp.s
 .PHONY : src/HelloWorld.cpp.s
 
+src/HelloWorld_test.o: src/HelloWorld_test.cpp.o
+.PHONY : src/HelloWorld_test.o
+
+# target to build an object file
+src/HelloWorld_test.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloWorld_test.out.dir/build.make CMakeFiles/HelloWorld_test.out.dir/src/HelloWorld_test.cpp.o
+.PHONY : src/HelloWorld_test.cpp.o
+
+src/HelloWorld_test.i: src/HelloWorld_test.cpp.i
+.PHONY : src/HelloWorld_test.i
+
+# target to preprocess a source file
+src/HelloWorld_test.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloWorld_test.out.dir/build.make CMakeFiles/HelloWorld_test.out.dir/src/HelloWorld_test.cpp.i
+.PHONY : src/HelloWorld_test.cpp.i
+
+src/HelloWorld_test.s: src/HelloWorld_test.cpp.s
+.PHONY : src/HelloWorld_test.s
+
+# target to generate assembly for a file
+src/HelloWorld_test.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloWorld_test.out.dir/build.make CMakeFiles/HelloWorld_test.out.dir/src/HelloWorld_test.cpp.s
+.PHONY : src/HelloWorld_test.cpp.s
+
+src/main_test.o: src/main_test.cpp.o
+.PHONY : src/main_test.o
+
+# target to build an object file
+src/main_test.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloWorld_test.out.dir/build.make CMakeFiles/HelloWorld_test.out.dir/src/main_test.cpp.o
+.PHONY : src/main_test.cpp.o
+
+src/main_test.i: src/main_test.cpp.i
+.PHONY : src/main_test.i
+
+# target to preprocess a source file
+src/main_test.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloWorld_test.out.dir/build.make CMakeFiles/HelloWorld_test.out.dir/src/main_test.cpp.i
+.PHONY : src/main_test.cpp.i
+
+src/main_test.s: src/main_test.cpp.s
+.PHONY : src/main_test.s
+
+# target to generate assembly for a file
+src/main_test.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloWorld_test.out.dir/build.make CMakeFiles/HelloWorld_test.out.dir/src/main_test.cpp.s
+.PHONY : src/main_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -146,11 +207,18 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... HelloWorld.out"
+	@echo "... HelloWorld_test.out"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... src/HelloWorld.o"
 	@echo "... src/HelloWorld.i"
 	@echo "... src/HelloWorld.s"
+	@echo "... src/HelloWorld_test.o"
+	@echo "... src/HelloWorld_test.i"
+	@echo "... src/HelloWorld_test.s"
+	@echo "... src/main_test.o"
+	@echo "... src/main_test.i"
+	@echo "... src/main_test.s"
 .PHONY : help
 
 

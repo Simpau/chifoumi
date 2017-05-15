@@ -10,3 +10,6 @@ include_directories( ${PKG_INCLUDE_DIRS} )
 add_executable( HelloWorld.out src/HelloWorld.cpp)
 target_link_libraries( HelloWorld.out ${PKG_LIBRARIES} )
 
+add_executable( HelloWorld_test.out src/HelloWorld_test.cpp src/main_test.cpp)
+target_link_libraries( HelloWorld_test.out ${PKG_LIBRARIES} )
+

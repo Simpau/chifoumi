@@ -1,4 +1,4 @@
-# Install script for directory: /home/simon/Documents/projet_GL/HelloWorld
+# Install script for directory: /home/exoleet/Documents/GL/Projet/chifoumi/HelloWorld
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "/home/simon/Documents/projet_GL/HelloWorld/src/build/${CMAKE_INSTALL_MANIFEST}" "")
+file(WRITE "/home/exoleet/Documents/GL/Projet/chifoumi/HelloWorld/src/build/${CMAKE_INSTALL_MANIFEST}" "")
 foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "/home/simon/Documents/projet_GL/HelloWorld/src/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  file(APPEND "/home/exoleet/Documents/GL/Projet/chifoumi/HelloWorld/src/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 endforeach()
