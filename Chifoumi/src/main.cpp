@@ -16,9 +16,7 @@ int main(int argc, char ** argv){
     /// Récupération du choix humain
     std::cin >> choix;
     if(choix == "quit")
-      break;
-    /// Réalisation du choix IA
-    std::cout << "\n" << std::endl;  
+      break; 
     /// Calcul du résultat de la partie
     result.play(argv[1],choix);
 
