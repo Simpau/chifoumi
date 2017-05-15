@@ -1,2 +1,0 @@
-/home/exoleet/Documents/GL/Projet/chifoumi/HelloWorld/src/build/CMakeFiles/HelloWorld.out.dir
-/home/exoleet/Documents/GL/Projet/chifoumi/HelloWorld/src/build/CMakeFiles/HelloWorld_test.out.dir
